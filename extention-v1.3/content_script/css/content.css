@@ -1,0 +1,101 @@
+﻿.vex.vex-theme-bottom-right-corner .vex-overlay {
+  display: block;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-dialog-input textarea {
+  height: 75px;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-dialog-input img {
+  height: 200px;
+  width: 200px;
+  display: block;
+}
+
+.btn-add-person,
+.btn-add-company {
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    padding: 8px 10px;
+    background: #EEE url("http://thirdparty.samita.in/queuelead.png");
+    background-repeat: no-repeat;
+    background-position: 100% 3px;
+    color: #f05f22 !important;
+    padding-right: 34px;
+}
+
+.btn-add-person:hover,
+.btn-add-company:hover {
+    text-decoration: none !important;
+}
+
+.btn-add-company {
+    float: right;
+}
+
+.btn-add-person.btn-linkedin {
+    position: absolute;
+    top: 15px;
+    right: 0px;
+    z-index: 99;
+}
+
+.srg .g .rc {
+    margin-bottom: 10px;
+}
+
+.profile-card.vcard {
+    position: relative !important;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-content {
+    background: #fff !important;
+    border-radius: 0px;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-dialog-message {
+    background-color: #EEE;
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-size: 14px;
+    line-height: 1.3;
+    border: 1px solid #5b5b5b;
+    color: #5b5b5b;
+}
+
+.vex.person-details .vex-dialog-message,
+.vex.company-details .vex-dialog-message {
+    display: none;
+}
+
+.vex.person-details .vex-content,
+.vex.company-details .vex-content {
+    height: 90vh;
+    overflow-y: scroll;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-content .vex-dialog-input img {
+    border-radius: 100%;
+    margin: auto;
+}
+
+.vex.vex-theme-bottom-right-corner.company-details .vex-content .vex-dialog-input img {
+    border-radius: 0px;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-content .vex-dialog-input input {
+    font-size: 14px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    background: #f0f4f7 !important;
+    color: #5b5b5b;
+    margin: 6px 0px 10px !important;
+}
+
+.vex.vex-theme-bottom-right-corner .vex-content .vex-dialog-buttons input[type = "submit"] {
+    background-color: #f05f22;
+    color: #fff;
+}

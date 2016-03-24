@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+    	<script type="text/javascript" src="../common/js/jquery.js"></script>
+    	<script type="text/javascript" src="./js/variables.js"></script>
+    	<script type="text/javascript" src="./js/popup.js"></script>
+
+    	<style>
+    		*,
+    		*:hover,
+    		*:focus {
+    			outline: none;
+    		}
+			body {
+				min-width:300px;
+				position: relative;
+				overflow: hidden;
+				font-family: "mic-32-new-rounded-web",sans-serif;
+			}
+			.title {
+				text-align: center;
+			}
+			.logo {
+				text-align: center;
+			}
+			p {
+				font-size: 14px;
+				font-weight: 600;
+				margin-top: 20px;
+				margin-bottom: 5px;
+			}
+			input {
+				width: 86%;
+				font-size: 14px;
+			    padding: 10px 20px;
+			    border: none;
+			    border-radius: 0px;
+			    box-shadow: none;
+			    background: #f0f4f7;
+			    color: #5b5b5b;
+			}
+			select {
+			    width: 100%;
+				font-size: 14px;
+				padding: 10px 20px;
+			    border: none;
+			    border-radius: 0px;
+			    box-shadow: none;
+			    background: #f0f4f7;
+			    color: #5b5b5b;
+			    background-image: none;
+			    -webkit-appearance: none;
+			}
+			.submit-button {
+				text-align: right;
+			}
+			#submit {
+				width: 100%;
+				background-color: #f05f22;
+			    color: #fff;
+			    font-size: 14px;
+			    text-decoration: none;
+			    font-weight: 700;
+			    padding: 10px 20px;
+			}
+    	</style>
+    </head>
+    <body>
+		
+		<p class="logo"><img src="./img/logo-text.png" alt="Queuelead"></p>
+
+    	<p>Country</p>
+    	<select name="country">
+    		<option>All Countries</option>
+			<option>United States</option>
+			<option>United Kingdom</option>
+			<option>Canada</option>
+			<option>Afghanistan</option>
+			<option>Albania</option>
+			<option>Algeria</option>
+			<option>Angola</option>
+			<option>Argentina</option>
+			<option>Armenia</option>
+			<option>Aruba</option>
+			<option>Australia</option>
+			<option>Austria</option>
+			<option>Bahrain</option>
+			<option>Bangladesh</option>
+			<option>Belarus</option>
+			<option>Belgium</option>
+			<option>Belize</option>
+			<option>Bolivia</option>
+			<option>Bosnia and Herzegovina</option>
+			<option>Brazil</option>
+			<option>Bulgaria</option>
+			<option>Chile</option>
+			<option>China</option>
+			<option>Colombia</option>
+			<option>Costa Rica</option>
+			<option>Croatia</option>
+			<option>Cyprus</option>
+			<option>Czech Republic</option>
+			<option>Denmark</option>
+			<option>Dominica</option>
+			<option>Dominican Republic</option>
+			<option>Ecuador</option>
+			<option>Egypt</option>
+			<option>El Salvador</option>
+			<option>Estonia</option>
+			<option>Falkland Islands</option>
+			<option>Finland</option>
+			<option>France</option>
+			<option>Georgia</option>
+			<option>Germany</option>
+			<option>Ghana</option>
+			<option>Gibraltar</option>
+			<option>Greece</option>
+			<option>Guatemala</option>
+			<option>Hong Kong</option>
+			<option>Hungary</option>
+			<option>Iceland</option>
+			<option selected="true">India</option>
+			<option>Indonesia</option>
+			<option>Iran</option>
+			<option>Ireland</option>
+			<option>Israel</option>
+			<option>Italy</option>
+			<option>Jamaica</option>
+			<option>Japan</option>
+			<option>Jordan</option>
+			<option>Kazakhstan</option>
+			<option>Kenya</option>
+			<option>Korea</option>
+			<option>Kuwait</option>
+			<option>Laos</option>
+			<option>Latvia</option>
+			<option>Lebanon</option>
+			<option>Luxembourg</option>
+			<option>Macedonia</option>
+			<option>Malaysia</option>
+			<option>Malta</option>
+			<option>Mexico</option>
+			<option>Moldova</option>
+			<option>Monaco</option>
+			<option>Montenegro</option>
+			<option>Morocco</option>
+			<option>Mozambique</option>
+			<option>Myanmar</option>
+			<option>Nepal</option>
+			<option>Netherlands</option>
+			<option>New Zealand</option>
+			<option>Nigeria</option>
+			<option>Norway</option>
+			<option>Oman</option>
+			<option>Pakistan</option>
+			<option>Panama</option>
+			<option>Peru</option>
+			<option>Philippines</option>
+			<option>Poland</option>
+			<option>Portugal</option>
+			<option>Puerto Rico</option>
+			<option>Qatar</option>
+			<option>Romania</option>
+			<option>Russian Federation</option>
+			<option>Sao Tome and Principe</option>
+			<option>Saudi Arabia</option>
+			<option>Serbia</option>
+			<option>Singapore</option>
+			<option>Slovak Republic</option>
+			<option>Slovenia</option>
+			<option>South Africa</option>
+			<option>Spain</option>
+			<option>Sri Lanka</option>
+			<option>Sweden</option>
+			<option>Switzerland</option>
+			<option>Taiwan</option>
+			<option>Tanzania</option>
+			<option>Thailand</option>
+			<option>Togo</option>
+			<option>Tonga</option>
+			<option>Trinidad and Tobago</option>
+			<option>Tunisia</option>
+			<option>Turkey</option>
+			<option>Uganda</option>
+			<option>Ukraine</option>
+			<option>United Arab Emirates</option>
+			<option>Uruguay</option>
+			<option>Uzbekistan</option>
+			<option>Venezuela</option>
+			<option>Vietnam</option>
+			<option>Zimbabwe</option>
+    	</select>
+
+    	<p>Job Title</p>
+    	<input type="text" name="jobTitle" value="">
+
+    	<p>Keywords</p>
+    	<input type="text" name="keywords" value="">
+
+    	<p>Education</p>
+    	<select name="education">
+    		<option>All Candidates</option>
+    		<option>Bachelors Degree</option>
+    		<option>Masters Degree</option>
+    		<option>Doctorate</option>
+    	</select>
+
+    	<p class="submit-button"><a id="submit" href="http://www.google.com">Search</a></p>
+    	<p id="view"></p>
+    </body>
+</html>
